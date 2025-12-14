@@ -1,0 +1,96 @@
+/* ============================
+   Search Bar — Dreamoire
+   ============================ */
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* Белая капсула */
+.search-input-wrapper {
+  position: relative;
+  background: white;
+  border-radius: 999px;
+  padding-inline: 1rem 2.2rem;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-light);
+}
+
+/* Инпут */
+.search-input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  color: var(--presque-noir);
+}
+
+.search-input::placeholder {
+  color: var(--border-dark);
+  opacity: 0.7;
+}
+
+/* Иконка поиска */
+.search-icon {
+  position: absolute;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* ============================
+   Suggestions List
+   ============================ */
+
+.search-suggestions {
+  position: absolute;
+  top: 42px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow-hover);
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 0;
+  z-index: var(--z-dropdown);
+}
+
+.search-suggestion {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--presque-noir);
+}
+
+.search-suggestion:hover {
+  background-color: var(--bg-second);
+}
+
+.suggestion-title {
+  font-weight: 500;
+}
+
+.suggestion-type {
+  opacity: 0.6;
+  font-size: 0.75rem;
+}
+
+/* ============================
+   Responsive
+   ============================ */
+
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+}

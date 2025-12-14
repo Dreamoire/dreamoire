@@ -2,6 +2,7 @@ import { useId, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo-yk.svg";
 import "../styles/NavBar.css";
+import SearchBar from "./SearchBar";
 
 const KEY_INFO =
   "Informations clés: Développeur front-end / full stack (alternance) — Paris — FR / EN / RU";
@@ -60,7 +61,11 @@ function NavBar() {
             <NavLink to="/cv" className="nav-cv-button" onClick={closeMenu}>
               Voir CV
             </NavLink>
-         
+
+            <div className="nav-search-wrapper">
+              <SearchBar />
+            </div>
+
             <button
               type="button"
               className="nav-burger"
@@ -112,6 +117,15 @@ function NavBar() {
               onClick={closeMenu}
             >
               Projets
+            </NavLink>
+            <NavLink
+              to="/graphisme"
+              className={({ isActive }) =>
+                `nav-mobile-link${isActive ? " nav-mobile-link--active" : ""}`
+              }
+              onClick={closeMenu}
+            >
+              Graphisme
             </NavLink>
             <NavLink
               to="/articles"

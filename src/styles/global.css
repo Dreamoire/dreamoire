@@ -88,7 +88,7 @@
   --h1-size: 2rem; 
   --h2-size: 1.75rem; 
   --h3-size: 1.375rem; 
-  --p-size: 1.2rem; 
+  --p-size: 1rem; 
 
   --fw-light: 300;
   --fw-regular: 400;
@@ -99,7 +99,7 @@
   --line-height-base: 1.6;
  
   --section-padding: 3rem;
-  --container-max-width: 1200px;
+  --container-max-width: 1280px;
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -144,11 +144,7 @@ body {
   line-height: var(--line-height-base);
 }
 
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0.5rem 1.5rem;
-}
+
 
 h1,
 h2,
@@ -195,14 +191,3 @@ a {
 .section {
   padding-block: var(--section-padding);
 }
-
-@media print {
-  .nav {
-    display: none !important;
-  }
-
-  .cv-page {
-    padding-top: 0 !important;
-  }
-}
-
