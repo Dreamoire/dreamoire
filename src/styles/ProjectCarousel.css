@@ -1,9 +1,120 @@
-.slide-placeholder {
-  background: #eee;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
+.project-frame {
+  --radius-frame: 36px;
+  --radius-card: 22px;
 }
 
+.project-carousel {
+  width: 100%;
+}
+
+.project-frame {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-second);
+  border-radius: var(--radius-frame);
+  padding: 18px;
+}
+
+.project-swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 0.5rem;
+  padding-inline: 0;
+  cursor: grab;
+}
+
+.project-swiper:active {
+  cursor: grabbing;
+}
+
+.project-slide {
+  width: auto;
+}
+
+.project-link {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  background: rgb(74 74 80 / 0.5);
+}
+
+.project-nav {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(74 74 80 / 0.28);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+.project-nav:hover {
+  background: rgb(74 74 80 / 0.45);
+}
+
+.project-nav--prev {
+  left: -6px;
+}
+
+.project-nav--next {
+  right: -6px;
+}
+
+.project-nav::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-right: 2px solid rgb(252 253 254 / 1);
+  border-bottom: 2px solid rgb(252 253 254 / 1);
+  rotate: -45deg;
+}
+
+.project-nav--prev::after {
+  rotate: 135deg;
+}
+
+@media (max-width: 1100px) {
+  .project-frame {
+    width: min(920px, 100%);
+    margin-inline: auto;
+    padding: clamp(10px, 1.2vw + 6px, 14px);
+    border-radius: clamp(22px, 2vw + 10px, 36px);
+    overflow: hidden;
+  }
+
+  .project-frame {
+    --radius-card: clamp(14px, 1.2vw + 10px, 22px);
+  }
+
+  .project-swiper {
+    padding-block: clamp(6px, 1vw, 10px);
+  }
+
+  .project-nav--prev {
+    left: 10px;
+  }
+
+  .project-nav--next {
+    right: 10px;
+  }
+
+  .project-nav {
+    width: clamp(36px, 4vw, 44px);
+    height: clamp(36px, 4vw, 44px);
+  }
+}

@@ -2,7 +2,7 @@
 title: "Elle a passé 300 000 € à l’aspirateur."
 subtitle: "Le prix du travail invisible"
 date: "2025-11-20"
-intro: "À première vue, ce titre peut sembler très accrocheur, dans la lignée de la presse sensationnaliste. Une exagération volontaire, presque grotesque. Et pourtant, il est rigoureusement exact."
+intro: "À première vue, ce titre ressemble à un pur putaclic, tout droit sorti de la presse sensationnaliste. Une exagération volontaire, presque grotesque. Et pourtant, il est rigoureusement exact."
 cover: "./cover.jpg"
 ---
  Il ne s’agit ni d’un scandale financier ni d’une provocation gratuite, mais de la traduction littérale d’un fait économique documenté: sur une vie professionnelle, les femmes perdent en moyenne environ 300 000 € de revenus par rapport aux hommes. Non par accident, mais par un système parfaitement structuré de répartition du travail, du temps et des rôles sociaux.
@@ -15,4 +15,3 @@ Le point de sortie, pour moi, est limpide : il faut cesser de laisser notre temp
 Et ce choix n’est pas seulement bénéfique pour les femmes : il est bénéfique pour l’ensemble de la société. Les chiffres le montrent sans ambiguïté : selon la Banque mondiale, le PIB par habitant pourrait être, à long terme, environ 20 % plus élevé si les écarts d’emploi entre les femmes et les hommes étaient comblés. De son côté, le McKinsey Global Institute estime que la réduction massive des inégalités pourrait ajouter entre 12 et 28 trillions de dollars au PIB mondial annuel dans un scénario de plein potentiel — un ordre de grandeur colossal. Le FMI, enfin, rappelle que la sous-utilisation des talents féminins constitue une perte directe de productivité et que l'inclusion économique se traduit par des gains de croissance mesurables.
 
 Reprendre du temps sur l’invisible pour le réallouer à l’ambition, à la formation et aux postes à responsabilité n’est donc pas un slogan : c’est une stratégie de puissance, individuelle et collective.
-
