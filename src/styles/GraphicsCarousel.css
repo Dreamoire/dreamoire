@@ -1,0 +1,175 @@
+.graphics-frame {
+  --radius-frame: 36px;
+  --radius-card: 22px;
+}
+
+.graphics-carousel {
+  width: 100%;
+}
+
+.graphics-frame {
+  position: relative;  
+  width: 100%;    
+   background-color: var(--bg-second);
+  border-radius: var(--radius-frame);
+  padding: 18px;
+}
+
+.graphics-swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 0.5rem;  
+  padding-inline: 0;
+  cursor: grab;    
+}
+
+.graphics-swiper:active {
+  cursor: grabbing;
+}
+
+.graphics-slide {
+  width: auto;  
+}
+
+.graphics-link {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-card);
+  overflow: hidden;  
+  box-shadow: var(--shadow-light);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.graphics-link:hover {
+  transform: translateY(-2px);
+  background: rgb(74 74 80 / 0.5);
+}
+
+.graphics-thumb {
+  display: block;
+  width: 100%;
+  height:  clamp(240px, 25vw, 450px);
+  object-fit: cover;
+  border-radius: inherit; 
+}
+
+.graphics-frame .swiper-button-prev,
+.graphics-frame .swiper-button-next {
+  z-index: 50;
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgb(74 74 80 / 0.28);
+  backdrop-filter: blur(6px);
+}
+
+.graphics-frame .swiper-button-prev::after,
+.graphics-frame .swiper-button-next::after {
+  font-size: 16px;
+  color: rgb(252 253 254 / 1);
+}
+
+.graphics-frame .swiper-button-prev:hover,
+.graphics-frame .swiper-button-next:hover {
+  background: rgb(74 74 80 / 0.45);
+}
+
+.graphics-swiper .swiper-button-prev,
+.graphics-swiper .swiper-button-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgb(74 74 80 / 0.28);
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
+
+.graphics-swiper .swiper-button-prev::after,
+.graphics-swiper .swiper-button-next::after {
+  font-size: 16px;
+  color: rgb(252 253 254 / 1);
+}
+
+.graphics-swiper .swiper-button-prev:hover,
+.graphics-swiper .swiper-button-next:hover {
+  background: rgb(74 74 80 / 0.45);
+}
+
+.graphics-nav {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(74 74 80 / 0.28);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+.graphics-nav:hover {
+  background: rgb(74 74 80 / 0.45);
+}
+
+.graphics-nav--prev {
+  left: -6px;
+}
+
+.graphics-nav--next {
+  right: -6px;
+}
+
+.graphics-nav::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-right: 2px solid rgb(252 253 254 / 1);
+  border-bottom: 2px solid rgb(252 253 254 / 1);
+  rotate: -45deg;
+}
+
+.graphics-nav--prev::after {
+  rotate: 135deg;
+}
+
+@media (max-width: 1100px) {
+  .graphics-frame {
+    width: min(920px, 100%);
+    margin-inline: auto;
+
+    padding: clamp(10px, 1.2vw + 6px, 14px);
+    border-radius: clamp(22px, 2vw + 10px, 36px);
+
+    overflow: hidden;
+  }
+
+  .graphics-frame {
+    --radius-card: clamp(14px, 1.2vw + 10px, 22px);
+  }
+
+  .graphics-swiper {
+    padding-block: clamp(6px, 1vw, 10px);
+  }
+ 
+  .graphics-nav--prev {
+    left: 10px;
+  }
+
+  .graphics-nav--next {
+    right: 10px;
+  }
+
+  .graphics-nav {
+    width: clamp(36px, 4vw, 44px);
+    height: clamp(36px, 4vw, 44px);
+  }
+
+  .graphics-thumb {
+    height: clamp(220px, 38vw, 360px);
+  }
+}

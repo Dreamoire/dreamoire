@@ -1,0 +1,31 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgb(252 253 254 / 1);
+  box-shadow: var(--shadow-light);
+}
+
+.project-card__image {
+  width: 100%;
+  height: clamp(180px, 18vw, 240px);
+  object-fit: cover;
+  display: block;
+}
+
+.project-card__content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.project-card__title {
+  margin: 0;
+}
+
+.project-card__desc {
+  margin: 0;
+  opacity: 0.9;
+}
