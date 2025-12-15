@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-main: rgb(252 253 254 / 1);
+  --bg-second: rgb(237 238 244 / 1);
+  --border-light: rgb(216 216 221 / 1);
+  --border-dark: rgb(74 74 80 / 1);
+  --presque-noir: rgb(13 13 15 / 1);
+  --cold-dark-grey: rgb(74 74 80 / 1);
+  --rouge-accent: rgb(230 57 70 / 1);
+  --vert-accent: rgb(36 147 135 / 1);
+
+--font-title: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-text: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --h1-size: 2rem; 
+  --h2-size: 1.75rem; 
+  --h3-size: 1.375rem; 
+  --p-size: 1.2rem; 
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --line-height-base: 1.6;
+ 
+  --section-padding: 3rem;
+  --container-max-width: 1200px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-light: 0 4px 8px rgb(0 0 0 / 0.08);
+  --shadow-hover: 0 4px 12px rgb(0 0 0 / 0.12);
+
+  --z-base: 1;
+  --z-nav: 100;
+  --z-dropdown: 200;
+  --z-modal: 300;
+  --z-overlay: 400;
+
+
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-large-desktop: 1440px;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--presque-noir);
+  font-family: var(--font-text);
+  font-size: var(--p-size);
+  line-height: var(--line-height-base);
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-title);
+  color: var(--cold-dark-grey);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--fw-semibold);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  margin: 0;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+@media print {
+  .nav {
+    display: none !important;
+  }
+
+  .cv-page {
+    padding-top: 0 !important;
+  }
+}
+

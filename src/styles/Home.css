@@ -1,0 +1,15 @@
+.home-page {
+  padding-top: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: var(--h2-size);
+  font-family: var(--font-title);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}

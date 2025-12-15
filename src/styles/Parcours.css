@@ -1,0 +1,63 @@
+.parcours-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  line-height: 1.65;
+}
+
+.parcours-header {
+  margin-bottom: 3rem;
+}
+
+.parcours-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.parcours-intro {
+  font-size: 1.05rem;
+  color: var(--text-muted, #666);
+  max-width: 720px;
+}
+
+.parcours-section {
+  margin-bottom: 2.75rem;
+}
+
+.parcours-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.parcours-section p {
+  margin-bottom: 0.75rem;
+  max-width: 760px;
+  font-size: 1.3rem;
+}
+
+.parcours-section ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+   font-size: 1.3rem;
+}
+
+.parcours-section li {
+  margin-bottom: 0.4rem;
+}
+
+
+@media (max-width: 768px) {
+  .parcours-page {
+    padding: 2rem 1.2rem 3rem;
+  }
+
+  .parcours-title {
+    font-size: 1.9rem;
+  }
+
+  .parcours-section h2 {
+    font-size: 1.25rem;
+  }
+}

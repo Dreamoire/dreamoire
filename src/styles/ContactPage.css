@@ -1,0 +1,120 @@
+.contact-page {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.contact-page__header {
+  margin-bottom: 1.5rem;
+}
+
+.contact-page__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-title);
+  color: var(--cold-dark-grey);
+}
+
+.contact-page__subtitle {
+  margin: 0;
+  color: var(--cold-dark-grey);
+  opacity: 0.85;
+}
+
+.contact-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-form {
+  background: var(--bg-second);
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-light);
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.contact-form__label {
+  font-family: var(--font-title);
+  font-weight: var(--fw-semibold);
+  color: var(--cold-dark-grey);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+  font-family: var(--font-body);
+  background: rgb(252 253 254 / 1);
+  color: var(--presque-noir);
+}
+
+.contact-form__input:focus-visible,
+.contact-form__textarea:focus-visible {
+  outline: 2px solid var(--vert-accent);
+  outline-offset: 3px;
+}
+
+.contact-form__button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-family: var(--font-title);
+  font-weight: var(--fw-semibold);
+  background: var(--vert-accent);
+  color: rgb(255 255 255 / 1);
+  box-shadow: var(--shadow-light);
+  cursor: pointer;
+}
+
+.contact-form__button:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-links {
+  background: rgb(13 13 15 / 1);
+  color: var(--bg-second);
+  border-radius: 18px;
+  padding: 1.25rem;
+}
+
+.contact-links__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-title);
+  color: var(--bg-second);
+}
+
+.contact-links__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-links__link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bg-second);
+  background: rgb(74 74 80 / 0.25);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+}
+
+.contact-links__link:hover {
+  background: rgb(74 74 80 / 0.45);
+}
+
+@media (max-width: 900px) {
+  .contact-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
