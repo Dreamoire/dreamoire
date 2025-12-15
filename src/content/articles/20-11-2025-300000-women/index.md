@@ -2,7 +2,7 @@
 title: "Elle a passé 300 000 € à l’aspirateur."
 subtitle: "Le prix du travail invisible"
 date: "2025-11-20"
-intro: "À première vue, ce titre ressemble à un pur putaclic, tout droit sorti de la presse sensationnaliste. Une exagération volontaire, presque grotesque. Et pourtant, il est rigoureusement exact."
+intro: "À première vue, ce titre peut sembler très accrocheur, dans la lignée de la presse sensationnaliste. Une exagération volontaire, presque grotesque. Et pourtant, il est rigoureusement exact."
 cover: "./cover.jpg"
 ---
  Il ne s’agit ni d’un scandale financier ni d’une provocation gratuite, mais de la traduction littérale d’un fait économique documenté: sur une vie professionnelle, les femmes perdent en moyenne environ 300 000 € de revenus par rapport aux hommes. Non par accident, mais par un système parfaitement structuré de répartition du travail, du temps et des rôles sociaux.
